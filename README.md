@@ -54,6 +54,6 @@ This project provides a robust solution for comparing a face against a database 
 
 ## Tools
 
-1. Theres a few usefull tools in the `tools/` directory
+1. coming soon
 
 ---
