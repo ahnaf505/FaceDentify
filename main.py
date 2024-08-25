@@ -10,10 +10,7 @@ if isvalidfile:
 else:
     print("Invalid file structure detected!")
     print("Fixing file structure...")
-
-# Empty out the terminal.
-print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-
+S
 # Simple debug menu.
 print("FaceDentify\n")
 print("1. Insert new single face into database")

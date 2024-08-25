@@ -61,7 +61,7 @@ def clearalldb():
         os.remove("fullnames.json")
     except:
         pass
-    sys.exit()
+    sys.exit(1)
 def search_fullname(uid):
     res = db.search(que.faceid == uid)
     return res
