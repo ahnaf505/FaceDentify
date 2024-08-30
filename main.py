@@ -85,6 +85,7 @@ elif menu == "3":
         if comparewithtuple(filename, currencode) == True:
             print(f"Matched with Face ID:{facedir[:-5]} Searching for full name...")
             print(f"Matched Face ID: {facedir[:-5]} with Full Name: {search_fullname(facedir[:-5])[0]['fullname']}")
+            print(f"Database face image on path: imgfacedb/{facedir[:-5]}.png")
             resultfound = True
             break
     if resultfound == False:
@@ -94,7 +95,7 @@ elif menu == "4":
     faceid = input("Input Face ID ==> ")
     if search_fullname(faceid):
         print(f"Full Name: {search_fullname(faceid)[0]['fullname']}")
-        print(f"Raw face image path: {search_fullname(faceid)[0]['faceid']}.png/jpg")
+        print(f"Raw face image path: faceimgdb/{search_fullname(faceid)[0]['faceid']}.png/jpg")
     else:
         print("No record found from the given ID!")
 
