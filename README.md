@@ -52,6 +52,7 @@ This project provides a robust solution for comparing a face against a database 
 
 ## Tools
 
-1. coming soon
+1. **Image Labeler**: A tool to manually label image dataset's full name, uses `tkinter` and `Pillow` so you can just type the full name and hit enter (Not typically recommended for use in production environments or with very large datasets)
+2. **Face Backup**: A tool to backup/restore the entire face database to/from another directory.
 
 ---
