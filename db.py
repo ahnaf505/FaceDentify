@@ -40,10 +40,26 @@ def gen_id():
 def deleteface(uid):
     try:
         os.remove(f"imgfacedb/{uid}.png")
+    except:
+        pass
+
+    try:
         os.remove(f"imgfacedb/{uid}.jpg")
+    except:
+        pass
+    
+    try:
         os.remove(f"imgfacedb/{uid}.jpeg")
-        db.remove(que.faceid == uid)
+    except:
+        pass
+    
+    try:
         os.remove(f"facedb/{uid}.face")
+    except:
+        pass
+    
+    try:
+        db.remove(que.faceid == uid)
     except:
         pass
 
@@ -61,7 +77,7 @@ def clearalldb():
         os.remove("fullnames.json")
     except:
         pass
-    sys.exit(1)
+
 def search_fullname(uid):
     res = db.search(que.faceid == uid)
     return res

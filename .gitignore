@@ -12,6 +12,8 @@ __pycache__/
 *.png
 *.webp
 *.face
+facedb
+imgfacedb
 
 # Distribution / packaging
 .Python
