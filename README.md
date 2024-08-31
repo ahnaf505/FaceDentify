@@ -1,10 +1,14 @@
 # FaceDentify ✨
 
-<a href="https://forthebadge.com">
+<a href="https://python.org">
   <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="30">
 </a>
-<a href="https://forthebadge.com">
+<a href="">
   <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg" height="30">
+</a>
+
+<a href="">
+  <img src="https://forthebadge.com/images/badges/open-source.svg" height="28">
 </a>
 
 Welcome to **FaceDentify**! This project is all about comparing faces 🕵️‍♂️ against a database, whether it's for personal collections or large-scale datasets. Using powerful facial recognition technology, it matches faces and stores important details like full names and unique IDs (UUIDs) in a simple-to-use `TinyDB` database. It’s fast, scalable, and includes handy tools like photo labeling 📸. Perfect for everything from security systems to personal fun!
