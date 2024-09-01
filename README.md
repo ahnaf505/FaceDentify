@@ -13,7 +13,6 @@
 
 Welcome to **FaceDentify**! This project is all about comparing faces 🕵️‍♂️ against a database, whether it's for personal collections or large-scale datasets. Using powerful facial recognition technology, it matches faces and stores important details like full names and unique UIDs (UUIDs) in a simple-to-use `TinyDB` database. It’s fast, scalable, and includes handy tools like photo labeling 📸. Perfect for everything from security systems to personal fun!
 
-*Want to help out? Contributions are welcome! Just submit a pull request 🚀.*
 
 ## 🎯 Features
 
@@ -117,3 +116,7 @@ Once the application is running, the GUI provides various options to interact wi
 2. **Face Backup**: Back up or restore your entire face database to/from another directory.
 
 ---
+
+*Want to help out? Contributions are welcome! Just submit a pull request 🚀.*
+
+Happy coding! If you have any questions, feel free to open an issue or contact us directly.
