@@ -38,14 +38,28 @@ def gen_id():
             return new_uid
     
 def deleteface(uid):
+    file_extensions = ['png', 'jpg', 'jpeg']
+    
+    for ext in file_extensions:
+        try:
+            os.remove(f"imgfacedb/{uid}.{ext}")
+        except FileNotFoundError:
+            pass
+        except Exception:
+            pass
+
     try:
-        os.remove(f"imgfacedb/{uid}.png")
-        os.remove(f"imgfacedb/{uid}.jpg")
-        os.remove(f"imgfacedb/{uid}.jpeg")
-        db.remove(que.faceid == uid)
         os.remove(f"facedb/{uid}.face")
-    except:
+    except FileNotFoundError:
         pass
+    except Exception:
+        pass
+
+    try:
+        db.remove(que.faceid == uid)
+    except Exception:
+        pass
+
 
 def clearalldb():
     try:
