@@ -79,6 +79,5 @@
 ## 🛠️ Dependencies
 
 - `tqdm`: For the progress bar.
-- `curses`: For the command-line interface (pre-installed on most Unix-based systems).
 
 ---

@@ -1,58 +1,122 @@
-
 # FaceDentify ✨
 
-<a href="https://forthebadge.com">
+<a href="https://python.org">
   <img src="https://forthebadge.com/images/badges/made-with-python.svg" height="30">
 </a>
-<a href="https://forthebadge.com">
+<a href="">
   <img src="https://forthebadge.com/images/featured/featured-built-with-love.svg" height="30">
 </a>
 
+<a href="">
+  <img src="https://forthebadge.com/images/badges/open-source.svg" height="30">
+</a>
 
-This project provides a robust solution for comparing a face against a database of any size, from small personal collections to large-scale datasets, using advanced facial recognition technology. The system efficiently matches faces and stores corresponding metadata, such as full names and random UUID, in a `TinyDB` database. Designed for scalability and optimized for performance, it also includes a few really useful tools, including photo labelling and etc., making it ideal for applications ranging from security systems to personal projects.
+Welcome to **FaceDentify**! This project is all about comparing faces 🕵️‍♂️ against a database, whether it's for personal collections or large-scale datasets. Using powerful facial recognition technology, it matches faces and stores important details like full names and unique UIDs (UUIDs) in a simple-to-use `TinyDB` database. It’s fast, scalable, and includes handy tools like photo labeling 📸. Perfect for everything from security systems to personal fun!
 
-*If you would like to contribute to this project, please feel free to submit a pull request.*
 
-## Features
+## 🎯 Features
 
-- **Insert New Faces**: Add single or multiple faces to the database with associated metadata.
-- **Query Faces**: Search the database for a face using biometric recognition or a Face ID.
-- **Delete Faces**: Remove a face from the database either by biometric recognition or by Face ID.
-- **Clear Database**: A high-risk operation that completely wipes all data from the database.
+- **Add New Faces**: Easily insert one or more faces into the database, along with their details.
+- **Search Faces**: Find a face using a photo or a unique Face UID.
+- **Delete Faces**: Remove faces from the database either by photo comparison or by using the Face UID.
+- **Clear Database**: This option will delete everything in the database.
 
-## Menu Options
+## Table of Contents 📖
 
-1. **Insert a new single face into the database**: Load an image and input the subject's full name.
-2. **Insert a list of faces into the database**: Load a JSON file containing multiple faces with their associated file paths and full names.
-3. **Query face from biometric recognition**: Search for a face in the database using an image.
-4. **Query face from Face ID**: Retrieve full name and face details using a unique Face ID.
-5. **Delete face from biometric recognition**: Remove a face from the database by comparing it with an uploaded image.
-6. **Delete face from Face ID**: Remove a face using its Face ID.
-7. **Clear entire database**: **Dangerous operation** that deletes all faces and associated data.
+1. [Installation](#installation)
+2. [Usage](#usage)
+   - [Insert Single Face](#insert-single-face)
+   - [Insert List of Faces](#insert-list-of-faces)
+   - [Query Face from Image](#query-face-from-image)
+   - [Query Face by ID](#query-face-by-id)
+   - [Delete Face by Image](#delete-face-by-image)
+   - [Delete Face by ID](#delete-face-by-id)
+   - [Clear Entire Database](#clear-entire-database)
+3. [Contributing](#contributing)
 
-## Installation
+## Installation 🚀
 
-1. Clone this repository:
+To get started with FaceDentify, follow these steps:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/facedentify.git
+   git clone https://github.com/ahnaf505/FaceDentify.git
    cd facedentify
    ```
-2. Install the required dependencies:
+
+2. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
-
-1. Run the script:
+3. **Run the Application**:
    ```bash
-   python facedentify.py
+   python main.py
    ```
-2. Follow the on-terminal instructions to interact with the database.
 
-## Tools
+## Usage 🛠️
 
-1. **Image Labeler**: A tool to manually label image dataset's full name, uses `tkinter` and `Pillow` so you can just type the full name and hit enter (Not typically recommended for use in production environments or with very large datasets)
-2. **Face Backup**: A tool to backup/restore the entire face database to/from another directory.
+Once the application is running, the GUI provides various options to interact with the database:
+
+   ### Insert Single Face
+   
+   1. Click **Insert Single Face**.
+   2. Select an image file.
+   3. Enter the full name of the person.
+   4. The face is encoded and stored in the database with a unique ID.
+   
+   ### Insert List of Faces
+   
+   1. Click **Insert List of Faces**.
+   2. Select a JSON file formatted like this:
+       ```json
+       [
+           {
+               "full_name": "John Doe",
+               "filepath": "path/to/image1.png"
+           },
+           {
+               "full_name": "Jane Smith",
+               "filepath": "path/to/image2.png"
+           }
+       ]
+       ```
+   3. The tool adds each face to the database.
+   
+   ### Query Face from Image
+   
+   1. Click **Query Face from Image**.
+   2. Select an image to search for similar faces in the database.
+   3. If a match is found, the corresponding Face ID and full name are displayed.
+   
+   ### Query Face by ID
+   
+   1. Click **Query Face by ID**.
+   2. Enter the Face ID.
+   3. Retrieve the associated full name and image.
+   
+   ### Delete Face by Image
+   
+   1. Click **Delete Face by Image**.
+   2. Select an image to find and delete the corresponding face.
+   
+   ### Delete Face by ID
+   
+   1. Click **Delete Face by ID**.
+   2. Enter the Face ID to remove all associated data.
+   
+   ### Clear Entire Database ⚠️
+   
+   1. Click **Clear Entire Database**.
+   2. Follow the prompts to confirm this irreversible action.
+   
+## 🔧 Tools
+
+1. **Image Labeler**: A simple tool to label images with a full name. Uses `tkinter` and `Pillow`. Just type the name and press enter (Best for small datasets, not recommended for production).
+2. **Face Backup**: Back up or restore your entire face database to/from another directory.
 
 ---
+
+*Want to help out? Contributions are welcome! Just submit a pull request 🚀.*
+
+Happy coding! If you have any questions, feel free to open an issue or contact us directly.
